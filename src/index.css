@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@theme {
+  --color-blue: #48a4db;
+  --color-blue-deep: #2f8fc7;
+  --color-blue-soft: #e8f4fb;
+  --color-blue-mist: #d4ebf7;
+  --color-orange: #fbac36;
+  --color-orange-deep: #e9981f;
+  --color-orange-soft: #fff3de;
+  --color-charcoal: #2d2c2b;
+  --color-charcoal-soft: #3f3e3c;
+  --color-ink: #2d2c2b;
+  --color-muted: #6b6966;
+  --color-line: #e5e2dd;
+  --color-canvas: #faf9f7;
+  --color-white: #ffffff;
+
+  --font-sans: "Jost", "Futura PT", "Avenir Next", "Segoe UI", sans-serif;
+  --font-display: "Fraunces", "Georgia", serif;
+
+  --ease-soft: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-sans);
+  font-weight: 400;
+  color: var(--color-charcoal);
+  background-color: var(--color-canvas);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: var(--color-blue-mist);
+  color: var(--color-charcoal);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-blue);
+  outline-offset: 3px;
+}
+
+.brand-gradient {
+  background: linear-gradient(90deg, #fbac36 0%, #48a4db 100%);
+}
+
+.logo-pattern {
+  background-color: #48a4db;
+  background-image: url("/logo-mark-white.png");
+  background-size: 70px 50px;
+  background-repeat: repeat;
+  background-blend-mode: overlay;
+  opacity: 1;
+}
+
+@keyframes breathe {
+  0%,
+  100% {
+    transform: scale(0.92);
+    opacity: 0.55;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+}
+
+.breathe-ring {
+  animation: breathe 7s ease-in-out infinite;
+}
+
+@keyframes drift {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(2%, -3%, 0);
+  }
+}
+
+.animate-drift {
+  animation: drift 16s ease-in-out infinite;
+}
