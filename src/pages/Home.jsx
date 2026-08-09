@@ -108,7 +108,7 @@ export default function Home() {
 
       {/* CTA */}
       <Section>
-        <div className="overflow-hidden rounded-[2rem] bg-white ring-1 ring-line">
+        <div className="overflow-hidden rounded-4xl bg-white ring-1 ring-line">
           <div className="brand-gradient h-1.5 w-full" />
           <div className="px-8 py-14 text-center sm:px-12 sm:py-16">
             <h2 className="font-display text-3xl text-charcoal sm:text-4xl">
@@ -118,10 +118,10 @@ export default function Home() {
               Whenever you&apos;re ready. There&apos;s no rush.
             </p>
             <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
-              <Button href="#" variant="orange" className="min-w-[160px]">
+              <Button href="#" variant="orange" className="min-w-40">
                 App Store
               </Button>
-              <Button href="#" variant="blue" className="min-w-[160px]">
+              <Button href="#" variant="blue" className="min-w-40">
                 Play Store
               </Button>
             </div>
