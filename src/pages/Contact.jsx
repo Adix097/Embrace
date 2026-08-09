@@ -113,13 +113,17 @@ export default function Contact() {
 
       <section className="px-6 pb-24 sm:px-8 sm:pb-28">
         <FadeIn>
-          <div className="logo-pattern mx-auto max-w-5xl overflow-hidden rounded-[2rem] px-8 py-16 text-center sm:py-20">
-            <p className="font-display text-3xl text-white sm:text-4xl">
-              You&apos;re not alone in this.
-            </p>
-            <p className="mx-auto mt-4 max-w-md text-white/80">
-              Acceptance is where it starts.
-            </p>
+          <div className="relative mx-auto max-w-5xl overflow-hidden rounded-[2rem] px-8 py-16 text-center sm:py-20">
+            <div className="logo-pattern absolute inset-0" aria-hidden="true" />
+            <div className="absolute inset-0 bg-blue/55" aria-hidden="true" />
+            <div className="relative">
+              <p className="font-display text-3xl text-white sm:text-4xl">
+                You&apos;re not alone in this.
+              </p>
+              <p className="mx-auto mt-4 max-w-md text-white/90">
+                Acceptance is where it starts.
+              </p>
+            </div>
           </div>
         </FadeIn>
       </section>
