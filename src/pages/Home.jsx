@@ -89,15 +89,19 @@ export default function Home() {
       <section className="relative overflow-hidden">
         <div className="logo-pattern absolute inset-0" aria-hidden="true" />
         <div
-          className="absolute inset-0 bg-blue/55"
+          className="absolute inset-0"
+          style={{
+            background:
+              'linear-gradient(to bottom, rgba(72,164,219,0.15) 0%, rgba(255,255,255,0.88) 42%, rgba(255,255,255,0.94) 50%, rgba(255,255,255,0.88) 58%, rgba(72,164,219,0.15) 100%)',
+          }}
           aria-hidden="true"
         />
         <div className="relative mx-auto max-w-3xl px-6 py-24 text-center sm:px-8 sm:py-28">
           <FadeIn>
-            <h2 className="font-display text-3xl text-white sm:text-4xl md:text-5xl">
+            <h2 className="font-display text-3xl text-charcoal sm:text-4xl md:text-5xl">
               Just support.
             </h2>
-            <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-white/90 sm:text-lg">
+            <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-charcoal/80 sm:text-lg">
               Embrace isn&apos;t clinical. It isn&apos;t about getting more done.
               It&apos;s a small place to rest when the day feels heavy.
             </p>
