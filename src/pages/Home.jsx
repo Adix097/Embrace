@@ -90,10 +90,10 @@ export default function Home() {
         <div className="logo-pattern absolute inset-0 opacity-90" aria-hidden="true" />
         <div className="relative mx-auto max-w-3xl px-6 py-24 text-center sm:px-8 sm:py-28">
           <FadeIn>
-            <h2 className="font-display text-3xl text-white sm:text-4xl md:text-5xl">
+            <h2 className="font-display text-3xl text-charcoal sm:text-4xl md:text-5xl">
               Just support.
             </h2>
-            <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-white/85 sm:text-lg">
+            <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-charcoal/85 sm:text-lg">
               Embrace isn&apos;t clinical. It isn&apos;t about getting more done.
               It&apos;s a small place to rest when the day feels heavy.
             </p>
